@@ -40,13 +40,13 @@
                             <p class=""><em>Description:</em></p>
                             <p class="">{{product.description}} <br> </p>
                             <!-- Price -->
-                            <p class="font-weight-bold">Initial Bid: {{product.initial_bid}}$ <br> </p>
+                            <p class="font-weight-bold">Initial Bid: ₹{{product.initial_bid}} <br> </p>
                             <!-- Button -->
 
                             {% if product.current_largest_bid %}
                             <button class="font-weight-bold" style="background-color: #FBAB7E;
                             background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-                            border: 0px; border-radius: 10px; zoom: 1.2;" > Current bid : {{product.current_largest_bid}}$ <br> </button>
+                            border: 0px; border-radius: 10px; zoom: 1.2;" > Current bid : ₹{{product.current_largest_bid}} <br> </button>
                             {% else %}
                             <p class="font-weight-bold" style="color: rgb(0, 60, 255);" >No bids made <br> </p>
                             {% endif %}
@@ -96,7 +96,7 @@
                             <p class=""><em>Description:</em></p>
                             <p class="">{{product.descriptiion}} <br> </p>
                             <!-- Price -->
-                            <p class="font-weight-bold">Initial Bid: {{product.initial_bid}}$ <br> </p>
+                            <p class="font-weight-bold">Initial Bid: ₹{{product.initial_bid}} <br> </p>
                             <!-- Button -->
 
                             {% if product.current_largest_bid %}

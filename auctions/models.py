@@ -1,13 +1,10 @@
 from django.contrib.auth.models import AbstractUser
-from django.contrib.auth.models import User
 from django.db import models
 from django.db.models.deletion import CASCADE, SET_NULL
 from django.db.models.fields.related import ForeignKey
 from django.utils import timezone
 
-
 class User(AbstractUser):
-    phone = models.DecimalField(blank = False,decimal_places= 0,max_digits = 10,default =0 )
     def __str__(self):
         return f"{self.username}"
     
